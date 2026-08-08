@@ -10,7 +10,7 @@ This is an end to end SQL project which involves data cleaning, standardization 
 
 ---
 ## Dataset Information
-* **Source:** gold_stock_2.csv from this repo.
+* **Source:** data/gold_stock_2.csv from this repo.
 * **Original Records:** 2968 rows.
 * **Key Fields**: Date, Closing_Price, Highest_Price_Of_the_Day, Lowest_Price_Of_The_Day, Opening_Price_Of_The_Day, Volume_Sold.
 
@@ -65,8 +65,8 @@ CREATE DATABASE IF NOT EXISTS eg_database;
 USE eg_database;
 ```
 
-5. Right click on the schema and import the raw data file(gold_stock_2.csv) using Table Data Import Wizard.
+5. Right click on the schema and import the raw data file(data/gold_stock_2.csv) using Table Data Import Wizard.
 
-6. Run the gold dataset DC to clean the data
+6. Run the scripts/gold dataset DC.sql to clean the data
 
-7. Run the gold dataset EDA to perform Exploratory Data Analysis.
+7. Run the scripts/gold dataset EDA.sql to perform Exploratory Data Analysis.
