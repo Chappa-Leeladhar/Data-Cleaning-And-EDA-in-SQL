@@ -38,7 +38,7 @@ GROUP BY mth
 ORDER BY 2 DESC;
 ```
 * **Findings:** It is found that 9th month i.e.., September had the most gold traded over the years which is 9% more than the second most gold traded month.
-  **Recommendation**: Check whether this aligns with known seasonal demand drivers (e.g., 
+* **Recommendation**: Check whether this aligns with known seasonal demand drivers (e.g., 
 festival or fiscal year-end buying) a repeating pattern like this is useful for timing 
 decisions, not just a curiosity.
 
@@ -50,7 +50,7 @@ GROUP BY yr
 ORDER BY 2 DESC;
 ```
 * **Findings:** It is found that 2024 had most gold traded than any other year. It's a 50% rise compared to it's previous year's total traded gold and 9% more when compared to it's next yr traded gold.
-  **Recommendation**: A jump this large is a signal, not just a stat worth investigating what 
+* **Recommendation**: A jump this large is a signal, not just a stat worth investigating what 
 changed that year (rates, inflation, geopolitical events) before assuming it's a trend that 
 continues.
 
@@ -66,7 +66,7 @@ FROM Volume_Ranking
 WHERE ranking<=10;
 ```
 * **Findings:** It is found that the most gold traded per day happened on 4th March 2021, which is 55% more from the second most gold traded day.
-  **Recommendation**: Use this kind of outlier detection as the basis for a simple alert system flagging any day where volume crosses a set threshold for manual review, since spikes this large are usually tied to specific market news.
+* **Recommendation**: Use this kind of outlier detection as the basis for a simple alert system flagging any day where volume crosses a set threshold for manual review, since spikes this large are usually tied to specific market news.
 
 ---
 ## How to run this project
